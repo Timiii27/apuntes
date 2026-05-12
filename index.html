@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apuntes EIR por temas, preparados por una enfermera especialista. Material organizado para estudiar mejor y solicitar compra por email o Bizum."
+    />
+    <title>Apuntes EIR por Temas</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Apuntes EIR inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M4.5 5.5h6.25c1.1 0 2 .9 2 2v12c0-.85-.7-1.55-1.55-1.55H4.5V5.5Z" />
+            <path d="M19.5 5.5h-6.25c-1.1 0-2 .9-2 2v12c0-.85.7-1.55 1.55-1.55h6.7V5.5Z" />
+          </svg>
+        </span>
+        <span>Apuntes EIR</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegacion principal">
+        <a href="#temas">Temas</a>
+        <a href="#caracteristicas">Caracteristicas</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="cart-trigger" type="button" data-cart-open aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6h15l-1.6 8.3a2 2 0 0 1-2 1.7H9.1a2 2 0 0 1-2-1.6L5 3H2" />
+          <circle cx="9" cy="20" r="1.5" />
+          <circle cx="18" cy="20" r="1.5" />
+        </svg>
+        <span>Mi Carrito</span>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-inner">
+          <p class="eyebrow">
+            <span aria-hidden="true">✦</span>
+            Apuntes de calidad para tu exito
+          </p>
+          <h1>Apuntes del EIR por Temas</h1>
+          <p class="hero-copy">
+            Preparados por una enfermera especialista. Material completo, organizado y actualizado para que apruebes tu examen EIR.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#temas">Ver todos los temas</a>
+            <a class="secondary-button" href="#caracteristicas">Mas informacion</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="study-strip" id="caracteristicas" aria-label="Ventajas">
+        <article>
+          <span class="strip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.5 5.5h6.2c1.1 0 2 .9 2 2v11.5c0-.85-.7-1.55-1.55-1.55H4.5V5.5Z" />
+              <path d="M19.5 5.5h-6.2c-1.1 0-2 .9-2 2v11.5c0-.85.7-1.55 1.55-1.55h6.65V5.5Z" />
+            </svg>
+          </span>
+          <h2>Facil de estudiar</h2>
+          <p>Formato claro y organizado por temas para avanzar sin perder tiempo buscando material.</p>
+        </article>
+        <article>
+          <span class="strip-icon blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3v18" />
+              <path d="M7 8h10" />
+              <path d="M7 16h10" />
+              <path d="M5 12h14" />
+            </svg>
+          </span>
+          <h2>Actualizado</h2>
+          <p>Contenido revisado para estudiar con una base solida y orientada al examen.</p>
+        </article>
+        <article>
+          <span class="strip-icon mint" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          </span>
+          <h2>Compra sencilla</h2>
+          <p>Selecciona temas, revisa el total y envia tu solicitud por email con opcion de Bizum.</p>
+        </article>
+      </section>
+
+      <section class="topics-section" id="temas">
+        <div class="section-heading">
+          <p class="section-kicker">Catalogo completo</p>
+          <h2>Elige los temas que necesitas</h2>
+          <p>Compra temas sueltos o prepara un pack. Cada tema individual tiene un precio de <strong>12€</strong>.</p>
+        </div>
+        <div class="topics-grid" data-topics-grid></div>
+      </section>
+
+      <section class="pricing-section" id="precios">
+        <div class="pricing-copy">
+          <p class="section-kicker">Precios</p>
+          <h2>Opciones simples para estudiar a tu ritmo</h2>
+          <p>Recibes los apuntes en menos de 24 horas tras confirmar el pago por Bizum o el metodo acordado por email.</p>
+        </div>
+        <div class="pricing-options" aria-label="Planes de compra">
+          <article class="price-option">
+            <div class="price-head">
+              <p>Tema individual</p>
+              <span class="price-save">A la carta</span>
+            </div>
+            <strong>12€</strong>
+            <span>Perfecto para reforzar una area concreta antes del examen.</span>
+            <ul class="price-features">
+              <li>Compra solo lo que necesitas</li>
+              <li>Seleccion por tema</li>
+              <li>Entrega tras confirmar pago</li>
+            </ul>
+            <a href="#temas">Elegir temas</a>
+          </article>
+          <article class="price-option featured">
+            <div class="price-head">
+              <p>Pack de 5 temas</p>
+              <span class="price-save">Ahorra 11€</span>
+            </div>
+            <strong>49€</strong>
+            <span>Para preparar bloques completos con un precio mas ajustado.</span>
+            <ul class="price-features">
+              <li>Elige 5 temas del catalogo</li>
+              <li>Ideal para repaso por areas</li>
+              <li>Solicitud directa por email</li>
+            </ul>
+            <button type="button" data-select-pack="Pack de 5 temas - 49€">Solicitar pack</button>
+          </article>
+          <article class="price-option">
+            <div class="price-head">
+              <p>Pack completo</p>
+              <span class="price-save">Mas pedido</span>
+            </div>
+            <strong>149€</strong>
+            <span>Todo el material disponible para una preparacion integral.</span>
+            <ul class="price-features">
+              <li>Todos los temas EIR</li>
+              <li>Material organizado por bloques</li>
+              <li>Mejor opcion para empezar de cero</li>
+            </ul>
+            <button type="button" data-select-pack="Pack completo - 149€">Solicitar completo</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto">
+        <div class="contact-copy">
+          <p class="section-kicker">Contacto</p>
+          <h2>Solicita tus apuntes</h2>
+          <p>Selecciona temas, deja tus datos y enviaremos la solicitud preparada al email de contacto.</p>
+          <div class="contact-meta">
+            <a data-contact-email href="mailto:tihomir27402@gmail.com">tihomir27402@gmail.com</a>
+            <span>Pago por Bizum disponible</span>
+          </div>
+        </div>
+
+        <form class="contact-form" data-contact-form>
+          <input type="hidden" name="form-name" value="solicitud-apuntes-eir" />
+          <label>
+            Nombre
+            <input name="name" type="text" autocomplete="name" required placeholder="Tu nombre" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required placeholder="tu@email.com" />
+          </label>
+          <label>
+            Telefono para Bizum
+            <input name="phone" type="tel" autocomplete="tel" placeholder="+34 600 000 000" />
+          </label>
+          <label>
+            Temas o pack
+            <textarea name="message" rows="4" placeholder="Ej: Pack completo, temas de Pediatria y Cardiologia, o cualquier duda."></textarea>
+          </label>
+
+          <div class="selected-summary" data-selected-summary>
+            <span data-selected-label>Seleccion actual</span>
+            <strong data-selected-total>0€</strong>
+          </div>
+
+          <button class="primary-button submit-button" type="submit">Enviar solicitud</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Carrito">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <h2>Mi Carrito</h2>
+          <button type="button" data-cart-close aria-label="Cerrar carrito">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 6 12 12" />
+              <path d="m18 6-12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong data-cart-total>0€</strong>
+        </div>
+        <a class="primary-button cart-cta" href="#contacto" data-cart-contact>Solicitar por email</a>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <span>Apuntes EIR</span>
+      <a href="#contacto">Contacto</a>
+      <a href="#temas">Temas</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
