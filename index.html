@@ -8,7 +8,6 @@
       content="Apuntes EIR por temas, preparados por una enfermera especialista. Material organizado para estudiar mejor y solicitar compra por email o Bizum."
     />
     <title>Apuntes EIR por Temas</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -212,6 +211,28 @@
           <strong data-cart-total>0€</strong>
         </div>
         <a class="primary-button cart-cta" href="#contacto" data-cart-contact>Solicitar por email</a>
+      </div>
+    </aside>
+
+    <aside class="preview-modal" data-preview-modal aria-hidden="true" aria-label="Previsualizacion de apuntes">
+      <div class="preview-panel">
+        <div class="preview-head">
+          <div>
+            <p>Vista previa protegida</p>
+            <h2 data-preview-title>Previsualización</h2>
+            <span data-preview-subtitle></span>
+          </div>
+          <button type="button" data-preview-close aria-label="Cerrar previsualización">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 6 12 12" />
+              <path d="m18 6-12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="preview-warning">
+          Estas páginas son solo una muestra. La marca de agua se mantiene visible para proteger el material.
+        </div>
+        <div class="preview-pages" data-preview-pages></div>
       </div>
     </aside>
 

@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; connect-src 'self' https://formsubmit.co; form-action https://formsubmit.co; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
+
+/assets/previews/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: public, max-age=604800
+
+/assets/covers/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: public, max-age=604800

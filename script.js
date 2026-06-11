@@ -6,39 +6,38 @@ const SITE_CONFIG = {
 const TOPIC_PRICE = 12;
 
 const topics = [
-  ["Oncologia y Hematologia", "Celulas, tratamientos y cuidados frecuentes.", 62, "cells", "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=900&q=78"],
-  ["Equilibrio Hidroelectrolitico", "Bases para interpretar alteraciones y su manejo.", 38, "droplet", "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=900&q=78"],
-  ["Administracion y Gestion", "Organizacion sanitaria, liderazgo y calidad.", 45, "clipboard", "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=78"],
-  ["Urgencias y Emergencias", "Prioridades, triaje y actuacion rapida.", 58, "siren", "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=78"],
-  ["Traumatologia", "Lesiones, inmovilizacion y cuidados practicos.", 42, "bone", "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=78"],
-  ["Nutricion y Dietetica", "Dietas, necesidades y educacion sanitaria.", 36, "apple", "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=78"],
-  ["Farmacologia", "Farmacos clave, seguridad y administracion.", 70, "pill", "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=78"],
-  ["Neurologia", "Valoracion neurologica y patologias frecuentes.", 54, "brain", "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=78"],
-  ["Investigacion y Estadistica", "Metodologia, lectura critica y resultados.", 44, "chart", "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=78"],
-  ["Endocrinologia", "Diabetes, hormonas y cuidados especificos.", 41, "activity", "https://images.unsplash.com/photo-1606206873764-fd15e242df52?auto=format&fit=crop&w=900&q=78"],
-  ["Nefro-Urologia", "Funcion renal, urologia y procedimientos.", 49, "kidney", "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=900&q=78"],
-  ["Fundamentos de Enfermeria", "Tecnicas basicas, seguridad y cuidados.", 66, "cross", "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=78"],
-  ["Dietas Terapeuticas", "Planes nutricionales aplicados a patologias.", 34, "leaf", "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=78"],
-  ["Salud Mental", "Trastornos, comunicacion y cuidados.", 47, "heart", "https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&fit=crop&w=900&q=78"],
-  ["Digestivo", "Patologia digestiva y cuidados enfermeros.", 52, "stomach", "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=78"],
-  ["Respiratorio", "Oxigenoterapia, ventilacion y enfermedades.", 50, "lungs", "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=78"],
-  ["Geriatria", "Cuidados del paciente mayor y fragilidad.", 39, "user", "https://images.unsplash.com/photo-1581579438747-104c53d7fbc4?auto=format&fit=crop&w=900&q=78"],
-  ["Cardiologia", "ECG, insuficiencia cardiaca y cuidados.", 57, "pulse", "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=900&q=78"],
-  ["Dermatologia", "Lesiones cutaneas, heridas y prevencion.", 31, "sparkle", "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=78"],
-  ["Ginecologia", "Salud sexual, embarazo y cuidados.", 53, "venus", "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=78"],
-  ["Pediatria", "Cuidados pediatricos, vacunas y desarrollo.", 61, "baby", "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=900&q=78"],
-  ["Enfermeria Comunitaria", "Promocion, prevencion y salud publica.", 55, "home", "https://images.unsplash.com/photo-1576765607924-270e364dd862?auto=format&fit=crop&w=900&q=78"],
-  ["Enfermeria Psicosocial", "Relacion terapeutica y contexto social.", 33, "users", "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=78"],
-  ["Etica y Legislacion", "Marco legal, consentimiento y responsabilidad.", 40, "scale", "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=78"],
-].map(([title, description, pages, icon, image], index) => ({
-  id: `tema-${index + 1}`,
-  title,
-  description,
-  pages,
-  icon,
-  image,
-  price: TOPIC_PRICE,
-}));
+  ["Administración y Gestión", "Organización sanitaria, liderazgo, calidad y gestión de cuidados.", 8, "clipboard", "./assets/covers/administracion-y-gestion.png"],
+  ["Cardiología", "ECG, insuficiencia cardiaca, patología cardiovascular y cuidados.", 28, "pulse", "./assets/covers/cardiologia.png"],
+  ["Dermatología", "Lesiones cutáneas, heridas, prevención y cuidados dermatológicos.", 20, "sparkle", "./assets/covers/dermatologia.png"],
+  ["Endocrinología", "Diabetes, hormonas y cuidados específicos de enfermería.", 21, "activity", "./assets/covers/endocrinologia.png"],
+  ["Enfermería Comunitaria", "Promoción de la salud, prevención, vacunas y salud pública.", 14, "home", "./assets/covers/enfermeria-comunitaria.png"],
+  ["Enfermería Psicosocial", "Apoyo psicosocial, comunicación terapéutica y relación de ayuda.", 9, "users", "./assets/covers/enfermeria-psicosocial.png"],
+  ["Farmacología", "Fármacos clave, seguridad, indicaciones y administración.", 16, "pill", "./assets/covers/farmacologia.png"],
+  ["Fundamentos de Enfermería", "Técnicas básicas, seguridad del paciente y cuidados esenciales.", 14, "cross", "./assets/covers/fundamentos-de-enfermeria.png"],
+  ["Geriatría", "Cuidados del paciente mayor, fragilidad y valoración integral.", 14, "user", "./assets/covers/geriatria.png"],
+  ["Ginecología", "Salud sexual, embarazo, cuidados ginecológicos y atención integral.", 13, "venus", "./assets/covers/ginecologia.png"],
+  ["Investigación y Estadística", "Metodología, lectura crítica, variables y resultados.", 12, "chart", "./assets/covers/investigacion-y-estadistica.png"],
+  ["Nefro-Urología", "Función renal, urología, procedimientos y cuidados frecuentes.", 11, "kidney", "./assets/covers/nefro-urologia.png"],
+  ["Neurología", "Valoración neurológica, patologías frecuentes y cuidados.", 13, "brain", "./assets/covers/neurologia.png"],
+  ["Nutrición y Dietética", "Dietas, necesidades nutricionales y educación sanitaria.", 14, "apple", "./assets/covers/nutricion-y-dietetica.png"],
+  ["Pediatría", "Cuidados pediátricos, vacunas, desarrollo y atención familiar.", 10, "baby", "./assets/covers/pediatria.png"],
+  ["Respiratorio", "Oxigenoterapia, ventilación, patología respiratoria y cuidados.", 5, "lungs", "./assets/covers/respiratorio.png"],
+  ["Salud Mental", "Trastornos, comunicación terapéutica y cuidados psicosociales.", 11, "heart", "./assets/covers/salud-mental.png"],
+  ["Traumatología", "Lesiones, inmovilización, valoración y cuidados prácticos.", 12, "bone", "./assets/covers/traumatologia.png"],
+].map(([title, description, pages, icon, image], index) => {
+  const previewBase = image.replace("/covers/", "/previews/").replace(".png", "");
+
+  return {
+    id: `tema-${index + 1}`,
+    title,
+    description,
+    pages,
+    icon,
+    image,
+    previewPages: [`${previewBase}-page-2.png`, `${previewBase}-page-3.png`],
+    price: TOPIC_PRICE,
+  };
+});
 
 const state = {
   cart: new Set(JSON.parse(localStorage.getItem("apuntes-cart") || "[]")),
@@ -55,6 +54,10 @@ const selectedTotal = document.querySelector("[data-selected-total]");
 const form = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const contactEmailLinks = document.querySelectorAll("[data-contact-email]");
+const previewModal = document.querySelector("[data-preview-modal]");
+const previewTitle = document.querySelector("[data-preview-title]");
+const previewSubtitle = document.querySelector("[data-preview-subtitle]");
+const previewPages = document.querySelector("[data-preview-pages]");
 
 contactEmailLinks.forEach((link) => {
   link.textContent = SITE_CONFIG.contactEmail;
@@ -136,15 +139,24 @@ function renderTopics() {
             <h3>${topic.title}</h3>
             <p>${topic.description}</p>
             <div class="topic-meta">
-              <span>${topic.pages} paginas</span>
+              <span>${topic.pages} páginas</span>
               <span>PDF organizado</span>
             </div>
             <div class="topic-buy">
               <span class="topic-price">${selected ? "Seleccionado" : "Disponible"}</span>
-              <button class="${selected ? "is-selected" : ""}" type="button" data-topic-id="${topic.id}" aria-label="${selected ? "Quitar" : "Agregar"} ${topic.title}">
-                ${cartIconSvg(selected)}
-                <span>${selected ? "Quitar" : "Añadir"}</span>
-              </button>
+              <div class="topic-actions">
+                <button class="preview-button" type="button" data-preview-id="${topic.id}" aria-label="Previsualizar ${topic.title}">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  <span>Previsualizar</span>
+                </button>
+                <button class="add-button ${selected ? "is-selected" : ""}" type="button" data-topic-id="${topic.id}" aria-label="${selected ? "Quitar" : "Agregar"} ${topic.title}">
+                  ${cartIconSvg(selected)}
+                  <span>${selected ? "Quitar" : "Añadir"}</span>
+                </button>
+              </div>
             </div>
           </div>
         </article>
@@ -186,7 +198,7 @@ function buildOrderTemplate(formData) {
     "",
     "PEDIDO",
     `Seleccion: ${selected}`,
-    `Paginas: ${state.pack ? "Segun pack seleccionado" : selectedTopics().map((topic) => `${topic.title}: ${topic.pages} paginas`).join(" | ") || "Pendiente de concretar"}`,
+    `Páginas: ${state.pack ? "Según pack seleccionado" : selectedTopics().map((topic) => `${topic.title}: ${topic.pages} páginas`).join(" | ") || "Pendiente de concretar"}`,
     `Total estimado: ${total}`,
     "Metodo de pago: Bizum o metodo acordado por email",
     "",
@@ -244,7 +256,7 @@ function renderCart() {
         <div class="cart-item">
           <div>
             <p>${topic.title}</p>
-            <span>${topic.pages} paginas · ${topic.price}€</span>
+            <span>${topic.pages} páginas · ${topic.price}€</span>
           </div>
           <button type="button" data-remove-topic="${topic.id}" aria-label="Quitar ${topic.title}">${removeIconSvg()}</button>
         </div>
@@ -269,6 +281,29 @@ function openCart() {
 function closeCart() {
   cartDrawer.classList.remove("is-open");
   cartDrawer.setAttribute("aria-hidden", "true");
+}
+
+function openPreview(topic) {
+  previewTitle.textContent = topic.title;
+  previewSubtitle.textContent = `Vista previa: 2 páginas interiores con marca de agua · ${topic.pages} páginas totales`;
+  previewPages.innerHTML = topic.previewPages
+    .map(
+      (page, index) => `
+        <figure class="preview-page">
+          <img src="${page}" alt="Previsualización ${index + 1} de ${topic.title}" loading="lazy" draggable="false" />
+          <figcaption>Página ${index + 2} · Muestra protegida</figcaption>
+        </figure>
+      `
+    )
+    .join("");
+  previewModal.classList.add("is-open");
+  previewModal.setAttribute("aria-hidden", "false");
+}
+
+function closePreview() {
+  previewModal.classList.remove("is-open");
+  previewModal.setAttribute("aria-hidden", "true");
+  previewPages.innerHTML = "";
 }
 
 function buildEmailBody(formData) {
@@ -346,6 +381,13 @@ async function submitForm(event) {
 }
 
 topicGrid.addEventListener("click", (event) => {
+  const previewButton = event.target.closest("[data-preview-id]");
+  if (previewButton) {
+    const topic = topics.find((item) => item.id === previewButton.dataset.previewId);
+    if (topic) openPreview(topic);
+    return;
+  }
+
   const button = event.target.closest("[data-topic-id]");
   if (!button) return;
 
@@ -364,6 +406,7 @@ topicGrid.addEventListener("click", (event) => {
 document.querySelector("[data-cart-open]").addEventListener("click", openCart);
 document.querySelector("[data-cart-close]").addEventListener("click", closeCart);
 document.querySelector("[data-cart-contact]").addEventListener("click", closeCart);
+document.querySelector("[data-preview-close]").addEventListener("click", closePreview);
 
 cartDrawer.addEventListener("click", (event) => {
   if (event.target === cartDrawer) closeCart();
@@ -380,6 +423,18 @@ cartDrawer.addEventListener("click", (event) => {
   }
 });
 
+previewModal.addEventListener("click", (event) => {
+  if (event.target === previewModal) closePreview();
+});
+
+previewPages.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+previewPages.addEventListener("dragstart", (event) => {
+  event.preventDefault();
+});
+
 document.querySelectorAll("[data-select-pack]").forEach((button) => {
   button.addEventListener("click", () => {
     state.pack = button.dataset.selectPack;
@@ -392,7 +447,10 @@ document.querySelectorAll("[data-select-pack]").forEach((button) => {
 form.addEventListener("submit", submitForm);
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeCart();
+  if (event.key === "Escape") {
+    closeCart();
+    closePreview();
+  }
 });
 
 sync();
